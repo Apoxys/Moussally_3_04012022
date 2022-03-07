@@ -1,0 +1,14 @@
+.homecard{
+    @include homepagearticle;
+}
+
+.homecard-text {
+    & h2{
+    margin: 0px;
+    margin-top: 10px;
+    }
+    & p{
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+}

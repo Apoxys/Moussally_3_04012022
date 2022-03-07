@@ -1,8 +1,13 @@
 @import "./utils/variables";
+@import "./Utils/mixins";
 @import "./Base/typography";
 @import "./Base/footer";
-
+@import "./Layout/homepagecards";
+@import "./Components/buttons";
 /*GENREAL*/
+body{
+    margin: 0px;
+}
 a{
     text-decoration: none;
     outline: none;
@@ -21,10 +26,12 @@ main{
     display: flex;
     flex-direction: column;
     background-color: $background-color;
+    padding: 10px;
 }
 
-/*RESTAURANTS*/
-
-article{
-    @include homepagearticle;
+.location{
+    display:flex;
+    justify-content: center;
 }
+
+
