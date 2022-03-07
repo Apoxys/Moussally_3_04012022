@@ -1,7 +1,8 @@
 @import "./utils/variables";
 @import "./Base/typography";
+@import "./Base/footer";
 
-
+/*GENREAL*/
 a{
     text-decoration: none;
     outline: none;
@@ -10,10 +11,10 @@ a{
 .home, .howto{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
     text-align: center;
+}
+ul{
+    list-style: none;
 }
 
 main{
@@ -22,9 +23,8 @@ main{
     background-color: $background-color;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    background-color: $background-color-footer;
-    color: white;
+/*RESTAURANTS*/
+
+article{
+    @include homepagearticle;
 }

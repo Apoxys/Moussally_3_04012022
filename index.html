@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="assets/sass/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bace093eec.js" crossorigin="anonymous"></script>
     <title>Accueil-ohmyfood!</title>
 </head>
 
@@ -14,6 +13,7 @@
         <!--Header contains logo + place + title section <title + text + button>-->
         <h1 class="logo">ohmyfood!</h1>
         <div>
+            <span class="fa-solid fa-location-dot"></span>
             <!--map mark-->
         </div>
         <section>
@@ -26,9 +26,9 @@
     <section class="howto">
         <h2>Fonctionnement</h2>
         <ol>
-            <li>Choisissez un restaurant</li>
-            <li>Composez votre menu</li>
-            <li>Dégustez au restaurant</li>
+            <li><span class="fa-solid fa-mobile-screen-button"></span>Choisissez un restaurant</li>
+            <li><span class="fa-regular fa-bars"></span>Composez votre menu</li>
+            <li><span class="fa-solid fa-store"></span>Dégustez au restaurant</li>
         </ol>
     </section>
     <!--main contains list of restaurants-->
@@ -36,21 +36,29 @@
         <h1>Restaurants</h1>
         <article>
             <a href="Lapalettedugout.html">
-                <img src="assets/images/restaurants/palette_gou.jpg" alt="image de plat du restaurant La palette du goût">
+                <img src="assets/images/restaurants/palette_gou.jpg"
+                    alt="image de plat du restaurant La palette du goût">
                 <div>
                     <h2>La palette du goût</h2>
                     <p>Ménilmontant</p>
-                    <span></span>
+                    <span class="fa-light fa-heart"></span>
+                    <!--empty heart-->
+                    <span class="fa-solid fa-heart"></span>
+                    <!--full heart-->
                 </div>
             </a>
         </article>
         <article>
             <a href="Lanoteenchantee.html">
-                <img src="assets/images/restaurants/note_enchante.jpg" alt="image de plate du restaurant La note enchantée">
+                <img src="assets/images/restaurants/note_enchante.jpg"
+                    alt="image de plate du restaurant La note enchantée">
                 <div>
                     <h2>La note enchantée</h2>
                     <p>Charonne</p>
-                    <span></span>
+                    <span class="fa-light fa-heart"></span>
+                    <!--empty heart-->
+                    <span class="fa-solid fa-heart"></span>
+                    <!--full heart-->
                 </div>
             </a>
         </article>
@@ -60,28 +68,38 @@
                 <div>
                     <h2>À la française</h2>
                     <p>Cité rouge</p>
-                    <span></span>
+                    <span class="fa-light fa-heart"></span>
+                    <!--empty heart-->
+                    <span class="fa-solid fa-heart"></span>
+                    <!--full heart-->
                 </div>
             </a>
         </article>
         <article>
             <a href="Ledelicedessens.html">
-                <img src="assets/images/restaurants/delice_sen.jpg" alt="image de plat du restaurant Le délice des sens">
+                <img src="assets/images/restaurants/delice_sen.jpg"
+                    alt="image de plat du restaurant Le délice des sens">
                 <div>
                     <h2>Le délice des sens</h2>
                     <p>Folie-Méricourt</p>
-                    <span></span>
+                    <span class="fa-light fa-heart"></span>
+                    <!--empty heart-->
+                    <span class="fa-solid fa-heart"></span>
+                    <!--full heart-->
                 </div>
             </a>
         </article>
     </main>
     <!--footer section-->
     <footer>
-        <p class="logo">ohmyfood</p>
-        <!--tranform markup <p> to <h(n)>-->
-        <a><span></span>Proposer un restaurant</a>
-        <a><span></span>Devenir partenaire</a>
-        <a>Mentions légales</a>
-        <a>Contact</a>
+        <ul>
+            <li class="logo">ohmyfood</li>
+            <li><a><span class="fa-solid fa-utensils"></span>Proposer un restaurant</a></li>
+            <li><a><span class="fa-solid fa-handshake-angle"></span>Devenir partenaire</a></li>
+            <li><a>Mentions légales</a></li>
+            <li><a>Contact</a></li>
+        </ul>
     </footer>
 </body>
+
+</html>

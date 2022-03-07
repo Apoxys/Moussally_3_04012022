@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color-footer;
+    color: white;
+}
+footer ul{
+    padding: 0px;
+    margin: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+ & li{
+    margin: 7px;
+ 
+   & .logo{
+    margin-bottom: 10px;
+   } 
+}
+}

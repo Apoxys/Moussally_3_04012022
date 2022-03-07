@@ -1,4 +1,5 @@
 /*COLORS*/
+/*MIXINS*/
 /*FONTS*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
@@ -10,6 +11,34 @@
   font-family: 'Roboto', Arial, sans-serif;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #353535;
+  color: white;
+}
+
+footer ul {
+  padding: 0px;
+  margin: 0px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+footer ul li {
+  margin: 7px;
+}
+
+footer ul li .logo {
+  margin-bottom: 10px;
+}
+
+/*GENREAL*/
 a {
   text-decoration: none;
   outline: none;
@@ -24,10 +53,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
   text-align: center;
+}
+
+ul {
+  list-style: none;
 }
 
 main {
@@ -41,15 +71,12 @@ main {
   background-color: #f6f6f6;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #353535;
-  color: white;
+/*RESTAURANTS*/
+article {
+  border-radius: 15px;
+  background-color: white;
+  margin: 10px;
+  -webkit-box-shadow: 3px 3px 7px #e7e7e7;
+          box-shadow: 3px 3px 7px #e7e7e7;
 }
 /*# sourceMappingURL=style.css.map */
