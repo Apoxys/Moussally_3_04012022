@@ -3,16 +3,15 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/sass/style.css" />
+    <script src="https://kit.fontawesome.com/bace093eec.js" crossorigin="anonymous"></script>
     <title>ohmyfood!</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html"><span>backarrow</span></a>
-        <img class="logo" src="assets/images/logo/ohmyfood.png" alt="logo ohmyfood">
+        <a href="index.html"><span class="fa-solid fa-arrow-left"></span></a>
+        <h1 class="logo">ohmyfood!</h1>
     </header>
     <img src="assets/images/restaurants/francaise.jpg" alt="image de plat du restaurant À la française">
     <!--Menu-->
@@ -24,30 +23,30 @@
             <h2>ENTRÉES</h2>
             <article>
                 <a>
-                    <h2></h2>
+                    <h2>Tartare de poulpe acidulé</h2>
                     <div>
-                        <p></p>
-                        <p></p>
+                        <p>Aux zestes d'orange</p>
+                        <p>25€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
             </article>
             <article>
                 <a>
-                    <h2></h2>
+                    <h2>Velouté de légumes d'antan</h2>
                     <div>
-                        <p></p>
-                        <p></p>
+                        <p>Carotte, panais, topinambour</p>
+                        <p>35€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
             </article>
             <article>
                 <a>
-                    <h2></h2>
+                    <h2>Soupe à l'oignon</h2>
                     <div>
-                        <p></p>
-                        <p></p>
+                        <p>Revisitée</p>
+                        <p>20€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
@@ -58,30 +57,30 @@
             <h2>PLATS</h2>
             <article>
                 <a>
-                    <h2></h2>
+                    <h2>Coquilles Saint-Jacques</h2>
                     <div>
-                        <p></p>
-                        <p></p>
+                        <p>Accompagnées d'une purée de panais</p>
+                        <p>40€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
             </article>
             <article>
                 <a>
-                    <h2></h2>
+                    <h2>Magret de canard</h2>
                     <div>
-                        <p></p>
-                        <p></p>
+                        <p>Et parmentier de pommes de terre</p>
+                        <p>35€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
             </article>
             <article>
                 <a>
-                    <h2></h2>
+                    <h2>Pigeonneau d’Ille-et-Vilaine</h2>
                     <div>
-                        <p></p>
-                        <p></p>
+                        <p>Sur son lit de gnocchis aux légumes</p>
+                        <p>44€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
@@ -92,30 +91,30 @@
             <h2>DESSERTS</h2>
             <article>
                 <a>
-                    <h2></h2>
+                    <h2>Pétales de violettes glacés</h2>
                     <div>
-                        <p></p>
-                        <p></p>
+                        <p>Et purée de noisettes</p>
+                        <p>18€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
             </article>
             <article>
                 <a>
-                    <h2></h2>
+                    <h2>Fondant au chocolat</h2>
                     <div>
-                        <p></p>
-                        <p></p>
+                        <p>Revisité</p>
+                        <p>22€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
             </article>
             <article>
                 <a>
-                    <h2></h2>
+                    <h2>Millefeuille croustillant</h2>
                     <div>
-                        <p></p>
-                        <p></p>
+                        <p>Myrtilles et pâte d’amande</p>
+                        <p>23€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
@@ -124,11 +123,12 @@
         <button>Commander</button>
     </main>
     <footer>
-        <p>ohmyfood</p>
-        <!--tranform markup <p> to <h(n)>-->
-        <a><span></span>Proposer un restaurant</a>
-        <a><span></span>Devenir partenaire</a>
-        <a>Mentions légales</a>
-        <a>Contact</a>
+        <ul>
+            <li class="logo">ohmyfood</li>
+            <li><a><span class="fa-solid fa-utensils"></span>Proposer un restaurant</a></li>
+            <li><a><span class="fa-solid fa-handshake-angle"></span>Devenir partenaire</a></li>
+            <li><a>Mentions légales</a></li>
+            <li><a>Contact</a></li>
+        </ul>
     </footer>
 </body>
