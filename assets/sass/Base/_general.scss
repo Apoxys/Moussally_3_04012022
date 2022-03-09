@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+.home, .howto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.logo{
+    margin: 10px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    padding: 10px;
+}
