@@ -9,16 +9,15 @@ footer{
     }
 }
 footer ul{
-    padding: 0px;
+    padding: 20px;
     margin: 0px;
-    padding-left: 20px;
-    padding-top: 20px;
+    
  & li{
     margin: 7px;
- 
-   & .logo{
-    margin-bottom: 10px;
+    }
+ & .logo{
+    margin-bottom: 15px;
+    margin-left: 7px;
    } 
-}
 }
 

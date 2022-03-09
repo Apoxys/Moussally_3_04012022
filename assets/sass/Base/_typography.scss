@@ -1,5 +1,5 @@
 /*FONTS*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 .title, .logo{
@@ -7,4 +7,10 @@
 }
 :not(.title, .logo){
     font-family: 'Roboto', Arial, sans-serif;
+}
+h2, h3, h4{
+    font-weight: 700;
+}
+p{
+    font-weight: 300;
 }

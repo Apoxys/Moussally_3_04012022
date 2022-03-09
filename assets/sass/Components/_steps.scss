@@ -16,11 +16,14 @@
         align-items: center;
         gap: 15px;
         position: relative;
+        &:hover{
+            background-color: $step-hover-background-color;            
+        }
     }
 }
 
 .step--number{
-    background-color: violet;
+    background-color: $step-number-color;
     color: white;
     border-radius: 50%;
     width: 24px;
@@ -31,4 +34,8 @@
     /*margin-left: -10px;*/
     position: absolute;
     left: -10px;
+}
+
+.steps span:not(.step--number){
+    color: $step-icon-color;
 }
