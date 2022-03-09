@@ -5,3 +5,9 @@
     margin: 10px;
     box-shadow: 3px 3px 7px $shadow-color;
 }
+
+@mixin stepcard{
+    border-radius: 20px;
+    background-color: $background-color;
+    box-shadow: 3px 3px 7px $shadow-color;
+}

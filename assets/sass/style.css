@@ -46,6 +46,33 @@ footer ul li .logo {
           box-shadow: 3px 3px 7px #e7e7e7;
 }
 
+.homecard a {
+  display: block;
+}
+
+.homecard a img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.homecard-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .homecard-text h2 {
   margin: 0px;
   margin-top: 10px;
@@ -56,7 +83,8 @@ footer ul li .logo {
   margin-bottom: 10px;
 }
 
-ol {
+.steps {
+  padding-left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,11 +94,48 @@ ol {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 10em;
+  width: 80%;
+  margin: 0 auto;
 }
 
-ol li {
+.steps li {
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 3px 3px 7px #e7e7e7;
+          box-shadow: 3px 3px 7px #e7e7e7;
+  font-weight: 700;
   margin: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.step--number {
+  background-color: violet;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*margin-left: -10px;*/
+  position: absolute;
+  left: -10px;
 }
 
 /*GENREAL*/
