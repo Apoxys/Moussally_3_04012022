@@ -1,0 +1,12 @@
+.explore{
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    & button{
+        border-radius: 20px;
+        padding: 10px;
+        max-width: fit-content;
+        align-self: center;
+    }
+}

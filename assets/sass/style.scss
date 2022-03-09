@@ -5,6 +5,8 @@
 @import "./Layout/homepagecards";
 @import "./Components/buttons";
 @import "./Components/steps";
+@import "./Layout/mapcard";
+@import "./Layout/explore";
 /*GENREAL*/
 body{
     margin: 0px;
@@ -22,7 +24,9 @@ a{
 ul{
     list-style: none;
 }
-
+.logo{
+    margin: 10px;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -30,9 +34,6 @@ main{
     padding: 10px;
 }
 
-.location{
-    display:flex;
-    justify-content: center;   
-}
+
 
 

@@ -1,0 +1,11 @@
+.location{
+    background-color: $mapbackground-color;
+    box-shadow: inset 0px 2px 5px $mapshadow-color;
+    display:flex;
+    justify-content: center;   
+    gap: 15px;
+    & span{
+        align-items: center;
+        display: flex;
+    }
+}

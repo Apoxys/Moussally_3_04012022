@@ -3,6 +3,10 @@ footer{
     flex-direction: column;
     background-color: $background-color-footer;
     color: white;
+    & a {
+        display: flex;
+        gap: 15px;
+    }
 }
 footer ul{
     padding: 0px;
@@ -17,3 +21,4 @@ footer ul{
    } 
 }
 }
+

@@ -23,6 +23,13 @@ footer {
   color: white;
 }
 
+footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
 footer ul {
   padding: 0px;
   margin: 0px;
@@ -138,6 +145,51 @@ footer ul li .logo {
   left: -10px;
 }
 
+.location {
+  background-color: #eaeaea;
+  -webkit-box-shadow: inset 0px 2px 5px #cfcfcf;
+          box-shadow: inset 0px 2px 5px #cfcfcf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+}
+
+.location span {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.explore {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.explore button {
+  border-radius: 20px;
+  padding: 10px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 /*GENREAL*/
 body {
   margin: 0px;
@@ -164,6 +216,10 @@ ul {
   list-style: none;
 }
 
+.logo {
+  margin: 10px;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,14 +230,5 @@ main {
           flex-direction: column;
   background-color: #f6f6f6;
   padding: 10px;
-}
-
-.location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
