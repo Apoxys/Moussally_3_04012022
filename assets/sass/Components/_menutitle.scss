@@ -1,0 +1,7 @@
+.menutitle{
+    display: flex;
+    justify-content: space-between;
+    & .hearticon{
+        align-self: center;
+    }
+}

@@ -9,26 +9,36 @@
 </head>
 
 <body>
-    <header>
+    <header class="nothome">
         <a href="index.html"><span class="fa-solid fa-arrow-left"></span></a>
         <h1 class="logo">ohmyfood!</h1>
     </header>
-    <img src="assets/images/restaurants/francaise.jpg" alt="image de plat du restaurant À la française">
+    <div>
+        <img class="headimg" src="assets/images/restaurants/francaise.jpg"
+            alt="image de plat du restaurant À la française">
+    </div>
     <!--Menu-->
     <main>
-        <h1>À la française</h1>
-        <div class="hearticon"></div>
+        <div class="menutitle">
+            <h1>À la française</h1>
+            <div class="hearticon">
+                <span class="fa-regular fa-heart"></span>
+                <!--empty heart-->
+                <span class="fa-solid fa-heart"></span>
+                <!--full heart-->
+            </div>
+        </div>
         <!--starters-->
         <section>
             <h2>ENTRÉES</h2>
-            <article>
+            <article class="menucard">
                 <a>
-                    <h2>Fricassée d'escargot</h2>
-                    <div>
-                        <p>Au piment d'Espelette </p>
-                        <p>25€</p>
+                    <h2 class="menucard--dish">Fricassée d'escargot</h2>
+                    <div class="menucard--text">
+                        <p class="menucard--text--accompaniement">Au piment d'Espelette </p>
+                        <p class="menucard--text--price">25€</p>
                     </div>
-                    <div class="checkmark"></div>
+                    <div class="menucard--checkmark"></div>
                 </a>
             </article>
             <article>
