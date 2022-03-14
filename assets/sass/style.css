@@ -150,6 +150,22 @@ footer ul .logo {
   margin-bottom: 10px;
 }
 
+.btn {
+  border-radius: 20px;
+  padding: 10px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.gradient {
+  color: white;
+  background-image: linear-gradient(170deg, #FF79DA 0%, #9356DC 70%);
+}
+
 .steps {
   padding-left: 0px;
   display: -webkit-box;
@@ -256,17 +272,6 @@ footer ul .logo {
   font-size: large;
 }
 
-.explore button {
-  border-radius: 20px;
-  padding: 10px;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 .nothome {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -351,5 +356,21 @@ footer ul .logo {
 
 .menucard--text--price {
   margin: 0px;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 10px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.gradient {
+  color: white;
+  background-image: linear-gradient(170deg, #FF79DA 0%, #9356DC 70%);
 }
 /*# sourceMappingURL=style.css.map */
