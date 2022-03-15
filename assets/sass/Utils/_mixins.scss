@@ -19,6 +19,8 @@
 
 @mixin button{
     border-radius: 20px;
+    border: 0px;
+    box-shadow: 3px 3px 7px $shadow-color;
     padding: 10px;
     max-width: fit-content;
     align-self: center;

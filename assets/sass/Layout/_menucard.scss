@@ -3,7 +3,8 @@
     &--dish{
         margin: 0px;
         padding: 10px;
-        padding-bottom: 0px;
+        padding-bottom: 5px;
+        font-size: medium;
     }
     &--text{
         display: flex;
@@ -12,9 +13,12 @@
         padding-top: 0px;
         &--accompaniement{
             margin: 0px;
+            font-size: small;
         }
         &--price{
             margin: 0px;
+            font-size: small;
+            font-weight: bold;
         }
     }
 }
