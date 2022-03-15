@@ -13,50 +13,50 @@
         <a href="index.html"><span class="fa-solid fa-arrow-left"></span></a>
         <h1 class="logo">ohmyfood!</h1>
     </header>
-    <img class="headimg" src="assets/images/restaurants/francaise.jpg" alt="image de plat du restaurant À la française">
+    <div>
+        <img class="headimg" src="assets/images/restaurants/note_enchantee.jpg"
+            alt="image de plat du restaurant À la française">
+    </div>
     <!--Menu-->
-    <main>
-        <h1>À la française</h1>
-        <div class="hearticon"></div>
+    <main class="menu">
+        <div class="menutitle">
+            <h1>À la française</h1>
+            <div class="hearticon">
+                <span class="fa-regular fa-heart"></span>
+                <!--empty heart-->
+                <span class="fa-solid fa-heart"></span>
+                <!--full heart-->
+            </div>
+        </div>
         <!--starters-->
         <section>
             <h2>ENTRÉES</h2>
-            <article>
+            <article class="menucard">
                 <a>
-                    <h2>Ravioles de foie gras</h2>
-                    <div>
-                        <p>Accompagnés de leur crème à la truffe</p>
-                        <p>25€</p>
+                    <h2 class="menucard--dish">Fricassée d'escargot</h2>
+                    <div class="menucard--text">
+                        <p class="menucard--text--accompaniement">Au piment d'Espelette </p>
+                        <p class="menucard--text--price">25€</p>
+                    </div>
+                    <div class="menucard--checkmark"></div>
+                </a>
+            </article>
+            <article class="menucard">
+                <a>
+                    <h2 class="menucard--dish">Foie gras de canard mi-cuit</h2>
+                    <div class="menucard--text">
+                        <p class="menucard--text--accompaniement">Et ses copeaux de truffe noire</p>
+                        <p class="menucard--text--price">35€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
             </article>
-            <article>
+            <article class="menucard">
                 <a>
-                    <h2>Caviar osciètre</h2>
-                    <div>
-                        <p>Sur blini à la farine de blé noir</p>
-                        <p>35€</p>
-                    </div>
-                    <div class="checkmark"></div>
-                </a>
-            </article>
-            <article>
-                <a>
-                    <h2>Homard et espuma de potiron</h2>
-                    <div>
-                        <p>Mariné aux zestes d'orange</p>
-                        <p>20€</p>
-                    </div>
-                    <div class="checkmark"></div>
-                </a>
-            </article>
-            <article>
-                <a>
-                    <h2>Foie gras de canard cuit entier</h2>
-                    <div>
-                        <p>Confiture de figue et pain toasté</p>
-                        <p>35€</p>
+                    <h2 class="menucard--dish">Oeuf au plat</h2>
+                    <div class="menucard--text">
+                        <p class="menucard--text--accompaniement">Assaisonné à la truffe sur lit de caviar</p>
+                        <p class="menucard--text--price">20€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
@@ -65,32 +65,32 @@
         <!--main-->
         <section>
             <h2>PLATS</h2>
-            <article>
+            <article class="menucard">
                 <a>
-                    <h2>Noix de coquilles Saint-Jacques</h2>
-                    <div>
-                        <p>Sur lit de purée de céleri-rave</p>
-                        <p>40€</p>
+                    <h2 class="menucard--dish">Filet de boeuf aux herbes</h2>
+                    <div class="menucard--text">
+                        <p class="menucard--text--accompaniement">Accompagné de sa ribambelle de légumes</p>
+                        <p class="menucard--text--price">40€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
             </article>
-            <article>
+            <article class="menucard">
                 <a>
-                    <h2>Langoustine poêlée</h2>
-                    <div>
-                        <p>Purée de patate douce</p>
-                        <p>35€</p>
+                    <h2 class="menucard--dish">Parmentier de queue de boeuf</h2>
+                    <div class="menucard--text">
+                        <p class="menucard--text--accompaniement">À la truffe noire sur sa purée de panais</p>
+                        <p class="menucard--text--price">35€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
             </article>
-            <article>
+            <article class="menucard">
                 <a>
-                    <h2>Mijoté de queue de boeuf</h2>
-                    <div>
-                        <p>Et riz sauvage aux zestes de citron</p>
-                        <p>44€</p>
+                    <h2 class="menucard--dish">Filet de turbot</h2>
+                    <div class="menucard--text">
+                        <p class="menucard--text--accompaniement">Aux agrumes</p>
+                        <p class="menucard--text--price">44€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
@@ -99,32 +99,32 @@
         <!--desserts-->
         <section>
             <h2>DESSERTS</h2>
-            <article>
+            <article class="menucard">
                 <a>
-                    <h2>Macaron noisette et chocolat</h2>
-                    <div>
-                        <p>Glace au caramel brun et sel de Guérande</p>
-                        <p>18€</p>
+                    <h2 class="menucard--dish">Paris-Brest</h2>
+                    <div class="menucard--text">
+                        <p class="menucard--text--accompaniement">Revisité</p>
+                        <p class="menucard--text--price">18€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
             </article>
-            <article>
+            <article class="menucard">
                 <a>
-                    <h2>Baba au rhum revisité</h2>
-                    <div>
-                        <p>Avec son coulis de citron</p>
-                        <p>22€</p>
+                    <h2 class="menucard--dish">Macaron au chocolat d'exception </h2>
+                    <div class="menucard--text">
+                        <p class="menucard--text--accompaniement">Et glace à la vanille de Madagascar</p>
+                        <p class="menucard--text--price">22€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
             </article>
-            <article>
+            <article class="menucard">
                 <a>
-                    <h2>Tarte au citron meringuée</h2>
-                    <div>
-                        <p>Déstructurée</p>
-                        <p>23€</p>
+                    <h2 class="menucard--dish">Mousse au chocolat </h2>
+                    <div class="menucard--text">
+                        <p class="menucard--text--accompaniement">Au piment d'Espelette et à la truffe noire</p>
+                        <p class="menucard--text--price">23€</p>
                     </div>
                     <div class="checkmark"></div>
                 </a>
