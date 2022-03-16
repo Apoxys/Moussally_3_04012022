@@ -162,6 +162,8 @@ footer ul .logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .gradient {
@@ -170,8 +172,6 @@ footer ul .logo {
 }
 
 .btn:hover {
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   opacity: 0.8;
@@ -399,6 +399,8 @@ footer ul .logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .gradient {
@@ -407,8 +409,6 @@ footer ul .logo {
 }
 
 .btn:hover {
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   opacity: 0.8;
