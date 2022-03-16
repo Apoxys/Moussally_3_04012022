@@ -1,11 +1,19 @@
 .menusection{
-    width: 10%;
     margin-bottom: 20px;
-    border-bottom: solid 3px $newbackground-color;
+
         &--title{
             font-weight: lighter;
-        font-size: medium;
-        width: 200%;
-        margin-bottom: 5px;
+            font-size: medium;
+            margin-bottom: 5px;
+            position: relative;
+            
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: -7px;
+                left: 0px;
+                border-bottom: solid 3px $newbackground-color;
+                width: 40px;
+            }
     }
 }

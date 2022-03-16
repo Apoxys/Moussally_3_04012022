@@ -164,9 +164,6 @@ footer ul .logo {
       align-self: center;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.gradient {
   color: white;
   background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
 }
@@ -174,7 +171,13 @@ footer ul .logo {
 .btn:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  opacity: 0.8;
+  background-image: linear-gradient(175deg, #fface8 0%, #ae80e5 70%);
+}
+
+.btn-order {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 40px;
 }
 
 .howto h2 {
@@ -332,7 +335,7 @@ footer ul .logo {
 .restaurant {
   border-radius: 20px 20px 0px 0px;
   position: relative;
-  top: -50px;
+  margin-top: -50px;
 }
 
 .restaurantname {
@@ -401,9 +404,6 @@ footer ul .logo {
       align-self: center;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-}
-
-.gradient {
   color: white;
   background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
 }
@@ -411,20 +411,33 @@ footer ul .logo {
 .btn:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  opacity: 0.8;
+  background-image: linear-gradient(175deg, #fface8 0%, #ae80e5 70%);
+}
+
+.btn-order {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 40px;
 }
 
 .menusection {
-  width: 10%;
   margin-bottom: 20px;
-  border-bottom: solid 3px #99e2d0;
 }
 
 .menusection--title {
   font-weight: lighter;
   font-size: medium;
-  width: 200%;
   margin-bottom: 5px;
+  position: relative;
+}
+
+.menusection--title::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0px;
+  border-bottom: solid 3px #99e2d0;
+  width: 40px;
 }
 
 /*
