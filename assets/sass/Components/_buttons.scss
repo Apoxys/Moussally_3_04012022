@@ -4,3 +4,8 @@
 .gradient{
     @include gradient;
 }
+.btn:hover{
+    transition-duration: 0.4s;
+    transform: scale(1.2);
+    opacity: 0.8;
+}

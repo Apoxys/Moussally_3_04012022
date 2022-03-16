@@ -1,10 +1,14 @@
+.howto h2{
+    text-align: left;
+    margin-left: 10px;
+}
+
 .steps {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 80%;
-    margin: 0 auto;
+    margin: 10px;
     & li{
         @include stepcard;
         font-weight: 700;

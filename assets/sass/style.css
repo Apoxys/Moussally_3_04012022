@@ -96,7 +96,7 @@ footer ul .logo {
 }
 
 .homecard {
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: white;
   margin: 10px;
   -webkit-box-shadow: 3px 3px 7px #e7e7e7;
@@ -122,7 +122,7 @@ footer ul .logo {
   background-color: #99e2d0;
   color: #008766;
   top: 5%;
-  left: 75%;
+  right: 3%;
   padding: 5px;
 }
 
@@ -169,6 +169,19 @@ footer ul .logo {
   background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
 }
 
+.btn:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.howto h2 {
+  text-align: left;
+  margin-left: 10px;
+}
+
 .steps {
   padding-left: 0px;
   display: -webkit-box;
@@ -180,8 +193,7 @@ footer ul .logo {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 80%;
-  margin: 0 auto;
+  margin: 10px;
 }
 
 .steps li {
@@ -307,7 +319,7 @@ footer ul .logo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
+  width: 85%;
 }
 
 .headimg {
@@ -339,7 +351,7 @@ footer ul .logo {
 }
 
 .menucard {
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: white;
   margin: 10px;
   -webkit-box-shadow: 3px 3px 7px #e7e7e7;
@@ -394,6 +406,14 @@ footer ul .logo {
   background-image: linear-gradient(175deg, #FF79DA 0%, #9356DC 70%);
 }
 
+.btn:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.8;
+}
+
 .menusection {
   width: 10%;
   margin-bottom: 20px;
@@ -406,4 +426,10 @@ footer ul .logo {
   width: 200%;
   margin-bottom: 5px;
 }
+
+/*
+.fa-solid .fa-heart{
+    color: linear-gradient(75deg, $secondary-color 0%, $primary-color 30%);
+}
+*/
 /*# sourceMappingURL=style.css.map */
