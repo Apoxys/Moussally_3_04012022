@@ -1,7 +1,7 @@
 .btn{
     @include button;
-    transition: all 0.4s ease-in-out;
     @include gradient;
+    transition: all 0.4s ease-in-out;
 }
 
 .btn:hover{

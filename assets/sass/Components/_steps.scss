@@ -46,3 +46,19 @@
 .steps span:not(.step--number){
     color: $step-icon-color;
 }
+
+@media screen and (min-width: 992px){
+
+    .howto h2{
+        text-align: center;
+    }
+    
+    .steps{
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        & li{
+            padding: 20px;
+        }
+    }
+}

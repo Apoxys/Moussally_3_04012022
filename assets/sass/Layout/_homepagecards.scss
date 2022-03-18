@@ -1,3 +1,8 @@
+.restaurantlist{
+    display: flex;
+    flex-direction: column;
+}
+
 .homecard{
     @include homepagearticle;
     & a{
@@ -34,5 +39,21 @@
     & p{
         margin: 0px;
         margin-bottom: 10px;
+    }
+}
+
+.homecard :hover{
+        box-shadow: 3px 3px 7px darken($shadow-color, 5%);
+}
+
+@media screen and (min-width: 992px){
+
+    .restaurantlist{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .homecard{
+        width: 300px;
     }
 }

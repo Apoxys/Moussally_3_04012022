@@ -21,3 +21,13 @@ footer ul{
    } 
 }
 
+@media screen and (min-width: 992px){
+    footer{
+        width: 77%;
+        margin: auto;
+        text-align: center;
+    }
+     footer ul li a{
+        display: inline-flex;
+     }
+}

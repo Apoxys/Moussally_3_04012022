@@ -3,3 +3,14 @@
     color: linear-gradient(75deg, $secondary-color 0%, $primary-color 30%);
 }
 */
+
+.emptyheart{
+    position: relative;
+    font-size: x-large;
+}
+.fullheart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
