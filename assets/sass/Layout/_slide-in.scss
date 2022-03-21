@@ -1,0 +1,25 @@
+.one {
+    opacity: 0;
+    animation: slide-in-bottom 1s ease both;
+}
+.two {
+    opacity: 0;
+    animation: slide-in-bottom 1s ease both;
+	animation-delay: 0.2s;
+}
+.three {
+    opacity: 0;
+    animation: slide-in-bottom 1s ease both;
+    animation-delay: 0.4s;
+}
+
+@keyframes slide-in-bottom {
+    0% {
+    transform: translateY(10px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+  }

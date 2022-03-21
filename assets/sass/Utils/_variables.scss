@@ -19,3 +19,5 @@ $newcolor:#008766;
 $background-color-footer:#353535;
 
 $primary-color-lighter: lighten($primary-color, 70%);
+
+$heart-color:linear-gradient(75deg, $secondary-color 0%, $primary-color 30%);
