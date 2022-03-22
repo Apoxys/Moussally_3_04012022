@@ -1,4 +1,3 @@
-/*GENERAL COLORS*/
 /*MIXINS*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
@@ -185,8 +184,12 @@ footer ul .logo {
 }
 
 .homecard:hover {
-  -webkit-box-shadow: 3px 3px 7px #dadada;
-          box-shadow: 3px 3px 7px #dadada;
+  -webkit-box-shadow: 3px 3px 7px #d5d5d5;
+          box-shadow: 3px 3px 7px #d5d5d5;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 @media screen and (min-width: 992px) {
@@ -452,6 +455,23 @@ footer ul .logo {
           box-shadow: 3px 3px 7px #e7e7e7;
 }
 
+.menucard a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menucard--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
 .menucard--dish {
   margin: 0px;
   padding: 10px;
@@ -531,11 +551,6 @@ footer ul .logo {
   width: 40px;
 }
 
-/*
-.fa-solid .fa-heart{
-    color: linear-gradient(75deg, $secondary-color 0%, $primary-color 30%);
-}
-*/
 .fullheart {
   position: relative;
   font-size: x-large;
@@ -693,6 +708,80 @@ footer ul .logo {
     -webkit-transform: rotate(200turn);
             transform: rotate(200turn);
     opacity: 0;
+  }
+}
+
+.menucard--checkmark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0px 20px 20px 0px;
+  width: 0px;
+  background-color: #8fdec9;
+  overflow: hidden;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.menucard--checkmark span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: white;
+  font-size: x-large;
+}
+
+.menucard:hover .menucard--checkmark {
+  -webkit-animation: scale-right 1s ease-in-out both;
+          animation: scale-right 1s ease-in-out both;
+}
+
+.menucard:hover .menucard--checkmark span {
+  position: absolute;
+  left: 10px;
+  -webkit-animation: rotate 1s ease-in-out both;
+          animation: rotate 1s ease-in-out both;
+}
+
+@-webkit-keyframes scale-right {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    width: 60px;
+  }
+}
+
+@keyframes scale-right {
+  0% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    width: 60px;
+  }
+}
+
+@-webkit-keyframes rotate {
+  50% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
+  }
+}
+
+@keyframes rotate {
+  50% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(-1turn);
+            transform: rotate(-1turn);
   }
 }
 /*# sourceMappingURL=style.css.map */

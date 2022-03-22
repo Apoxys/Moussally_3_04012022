@@ -1,5 +1,13 @@
 .menucard{
     @include homepagearticle;
+    & a{
+        display: flex;
+    }
+    &--content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
     &--dish{
         margin: 0px;
         padding: 10px;
