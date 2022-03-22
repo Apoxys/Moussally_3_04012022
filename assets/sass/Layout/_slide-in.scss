@@ -1,15 +1,10 @@
-.one {
-    opacity: 0;
-    animation: slide-in-bottom 1s ease both;
+.one, .two, .three {
+    @include slide-in
 }
 .two {
-    opacity: 0;
-    animation: slide-in-bottom 1s ease both;
 	animation-delay: 0.2s;
 }
 .three {
-    opacity: 0;
-    animation: slide-in-bottom 1s ease both;
     animation-delay: 0.4s;
 }
 
