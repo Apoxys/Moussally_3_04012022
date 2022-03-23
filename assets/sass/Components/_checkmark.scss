@@ -9,7 +9,6 @@
     background-color: $checkbackground-color;
     overflow: hidden;
     transform-origin: right;
-    // animation: scale-right-reverse 1s ease-in-out;
 }
 .menucard--checkmark span{
     align-self: center;
@@ -38,15 +37,6 @@
         width: 60px;
     }
 } 
-// @keyframes scale-right-reverse {
-//     from{
-//         width: 60px;
-//     }
-//     to{
-//         width: 0px;
-//     }
-    
-// }
 
 @keyframes rotate{
     50%{
