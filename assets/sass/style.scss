@@ -1,19 +1,20 @@
 @import "./Utils/variables";
 @import "./Utils/mixins";
+
 @import "./Base/general";
 @import "./Base/typography";
 @import "./Base/footer";
+
+@import "./Layout/menucard";
+@import "./Layout/menusection";
 @import "./Layout/homepagecards";
+@import "./Layout/slide-in";
+
 @import "./Components/buttons";
 @import "./Components/steps";
-@import "./Layout/mapcard";
-@import "./Layout/explore";
-@import "./Layout/restaurant";
-@import "./Components/restaurantname";
-@import "./Layout/menucard";
-@import "./Components/buttons";
-@import "./Components/menusection";
 @import "./Components/heart";
-@import "./Layout/slide-in";
+@import "./Components/checkmark";
 @import "./Components/loader";
-@import "./Layout/checkmark";
+
+@import "./Pages/home";
+@import "./Pages/restaurant";
