@@ -1,3 +1,7 @@
+.notloader{
+  animation: appear 3.5s ease-in-out;
+}
+
 .loader{
     position: absolute;
     top: 50%;
@@ -42,5 +46,17 @@
     100% {
       transform: rotate(200turn);
       opacity: 0;
+    }
+  }
+
+  @keyframes appear {
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.2;
+    }
+    100%{
+      opacity: 1;
     }
   }

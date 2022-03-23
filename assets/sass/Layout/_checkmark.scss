@@ -1,3 +1,7 @@
+.menucard{
+    transition: all 2s;
+}
+
 .menucard--checkmark{
     display: flex;
     border-radius: 0px 20px 20px 0px;
@@ -5,16 +9,17 @@
     background-color: $checkbackground-color;
     overflow: hidden;
     transform-origin: right;
+    // animation: scale-right-reverse 1s ease-in-out;
 }
 .menucard--checkmark span{
     align-self: center;
     color: white;
     font-size: x-large;
-
 }
 
 .menucard:hover .menucard--checkmark{
     animation: scale-right 1s ease-in-out both;
+
 
 }
 .menucard:hover .menucard--checkmark span{
@@ -25,12 +30,23 @@
 
 @keyframes scale-right {
     0% {
-        transform: scaleX(1);
+        width: 0;
+        transform: scaleX(0.5);
     }
     100%{
+        transform: scaleX(1);
         width: 60px;
     }
 } 
+// @keyframes scale-right-reverse {
+//     from{
+//         width: 60px;
+//     }
+//     to{
+//         width: 0px;
+//     }
+    
+// }
 
 @keyframes rotate{
     50%{

@@ -48,7 +48,8 @@ main {
   main {
     width: 75%;
     margin: auto;
-    border-radius: 30px 30px 0px 0px;
+    margin-bottom: 10px;
+    border-radius: 30px;
   }
   main h1 {
     text-align: center;
@@ -107,8 +108,6 @@ footer ul .logo {
 
 @media screen and (min-width: 992px) {
   footer {
-    width: 80%;
-    margin: auto;
     text-align: center;
   }
   footer ul li a {
@@ -301,7 +300,6 @@ footer ul .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*margin-left: -10px;*/
   position: absolute;
   left: -10px;
 }
@@ -411,7 +409,7 @@ footer ul .logo {
 }
 
 .restaurant {
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
   position: relative;
   margin-top: -50px;
 }
@@ -419,6 +417,8 @@ footer ul .logo {
 @media screen and (min-width: 992px) {
   .restaurant {
     width: 70%;
+    margin-bottom: 10px;
+    border-radius: 30px;
   }
   .restaurantname h1 {
     padding-left: 20px;
@@ -470,6 +470,9 @@ footer ul .logo {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .menucard--dish {
@@ -477,6 +480,9 @@ footer ul .logo {
   padding: 10px;
   padding-bottom: 5px;
   font-size: medium;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menucard--text {
@@ -493,6 +499,9 @@ footer ul .logo {
 .menucard--text--accompaniement {
   margin: 0px;
   font-size: small;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menucard--text--price {
@@ -624,6 +633,11 @@ footer ul .logo {
   }
 }
 
+.notloader {
+  -webkit-animation: appear 3.5s ease-in-out;
+          animation: appear 3.5s ease-in-out;
+}
+
 .loader {
   position: absolute;
   top: 50%;
@@ -711,6 +725,35 @@ footer ul .logo {
   }
 }
 
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.menucard {
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
 .menucard--checkmark {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -745,20 +788,26 @@ footer ul .logo {
 
 @-webkit-keyframes scale-right {
   0% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    width: 0;
+    -webkit-transform: scaleX(0.5);
+            transform: scaleX(0.5);
   }
   100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
     width: 60px;
   }
 }
 
 @keyframes scale-right {
   0% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    width: 0;
+    -webkit-transform: scaleX(0.5);
+            transform: scaleX(0.5);
   }
   100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
     width: 60px;
   }
 }
