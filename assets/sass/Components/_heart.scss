@@ -1,14 +1,14 @@
 .fullheart{
     position: relative;
     font-size: x-large;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.6s ease-in-out;
     color: white;
 }
 .emptyheart{
     position: absolute;
     top: 0;
     right: 0;   
-    transition: all 0.6s ease-out;
+    transition: all 0.8s ease-out;
     opacity: 1;
     color: black;
 }
@@ -17,10 +17,10 @@
     color: transparent;
     background-image: $heart-color;
     background-clip: text;
-    scale: (1.1)
+    transform: scale(1.1);
 }
 
 .fullheart:hover .emptyheart{
     opacity: 0;
-    scale: (0.9);
+    transform: scale(0.9);
 }
