@@ -577,9 +577,13 @@ footer ul .logo {
 }
 
 .loader {
-  position: absolute;
-  top: 50%;
-  left: 48%;
+  position: fixed;
+  top: 25%;
+  left: 40%;
+  margin: auto;
+  right: 40%;
+  min-width: 90px;
+  max-width: 90px;
 }
 
 .lds-dual-ring {
@@ -684,6 +688,13 @@ footer ul .logo {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .loader {
+    position: fixed;
+    top: 45%;
   }
 }
 
