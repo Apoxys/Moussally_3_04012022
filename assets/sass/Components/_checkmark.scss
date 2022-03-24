@@ -4,43 +4,30 @@
 
 .menucard--checkmark{
     display: flex;
-    border-radius: 0px 20px 20px 0px;
-    width: 0px;
+    flex: 0%;
+    max-width: 60px;
     background-color: $checkbackground-color;
     overflow: hidden;
-    transform-origin: right;
+    transition: all 1s ease-in-out;
 }
 .menucard--checkmark span{
+    display: flex;
+    padding: 10px;
     align-self: center;
     color: white;
     font-size: x-large;
 }
 
 .menucard:hover .menucard--checkmark{
-    animation: scale-right 1s ease-in-out both;
-
-
+   flex: 25%;
 }
 .menucard:hover .menucard--checkmark span{
-    position: absolute;
-    left: 10px;
     animation: rotate 1s ease-in-out both;
 }
 
-@keyframes scale-right {
-    0% {
-        width: 0;
-        transform: scaleX(0.5);
-    }
-    100%{
-        transform: scaleX(1);
-        width: 60px;
-    }
-} 
-
 @keyframes rotate{
-    50%{
-        transform: rotate(0turn);
+    40%{
+        transform: rotate(90deg);
     }
     100%{
         transform: rotate(-1turn);

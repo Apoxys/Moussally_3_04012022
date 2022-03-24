@@ -1,3 +1,8 @@
+.allcourses{
+    display: flex;
+    flex-direction: column;
+}
+
 .menusection{
     margin-bottom: 20px;
 
@@ -16,4 +21,9 @@
                 width: 40px;
             }
     }
+}
+@media screen and (min-width: 992px){
+    .allcourses{
+        flex-direction: row;
+    }    
 }
