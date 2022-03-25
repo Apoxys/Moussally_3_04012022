@@ -211,12 +211,15 @@ footer ul .logo {
   width: 40px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1400px) {
   .allcourses {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -261,7 +264,7 @@ footer ul .logo {
   padding: 5px;
 }
 
-.homecard-text {
+.homecard--text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,12 +278,12 @@ footer ul .logo {
   padding-right: 10px;
 }
 
-.homecard-text h2 {
+.homecard--text h2 {
   margin: 0px;
   margin-top: 10px;
 }
 
-.homecard-text p {
+.homecard--text p {
   margin: 0px;
   margin-bottom: 10px;
 }
@@ -294,7 +297,7 @@ footer ul .logo {
   transition: all 0.3s;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .restaurantlist {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -691,7 +694,14 @@ footer ul .logo {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1000px) {
+  .loader {
+    position: fixed;
+    top: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 999px) {
   .loader {
     position: fixed;
     top: 45%;

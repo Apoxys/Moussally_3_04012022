@@ -65,7 +65,13 @@
     }
   }
 
-  @media screen and (min-width: 992px){
+  @media screen and (min-width: 1000px){
+    .loader{
+      position: fixed;
+      top: 30%;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width:999px){
     .loader{
       position: fixed;
       top: 45%;
