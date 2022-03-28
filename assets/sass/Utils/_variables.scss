@@ -21,5 +21,6 @@ $checkbackground-color: #8fdec9;
 $background-color-footer:#353535;
 
 $primary-color-lighter: lighten($primary-color, 70%);
+$shadow-color-darker: darken($shadow-color, 30%);
 
 $heart-color:linear-gradient(180deg, $primary-color 0%, $secondary-color 95%);
