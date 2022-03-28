@@ -123,6 +123,7 @@ footer ul .logo {
   margin: 10px;
   -webkit-box-shadow: 3px 3px 7px #e7e7e7;
           box-shadow: 3px 3px 7px #e7e7e7;
+  overflow: hidden;
 }
 
 .menucard a {
@@ -180,6 +181,16 @@ footer ul .logo {
   font-weight: bold;
 }
 
+.allcourses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .menusection {
   margin-bottom: 20px;
 }
@@ -198,6 +209,15 @@ footer ul .logo {
   left: 0px;
   border-bottom: solid 3px #99e2d0;
   width: 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .allcourses {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .restaurantlist {
@@ -499,64 +519,42 @@ footer ul .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 0px 20px 20px 0px;
-  width: 0px;
+  -webkit-box-flex: 0%;
+      -ms-flex: 0%;
+          flex: 0%;
+  max-width: 60px;
   background-color: #8fdec9;
   overflow: hidden;
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .menucard--checkmark span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   color: white;
   font-size: x-large;
 }
 
 .menucard:hover .menucard--checkmark {
-  -webkit-animation: scale-right 1s ease-in-out both;
-          animation: scale-right 1s ease-in-out both;
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
 }
 
 .menucard:hover .menucard--checkmark span {
-  position: absolute;
-  left: 10px;
   -webkit-animation: rotate 1s ease-in-out both;
           animation: rotate 1s ease-in-out both;
 }
 
-@-webkit-keyframes scale-right {
-  0% {
-    width: 0;
-    -webkit-transform: scaleX(0.5);
-            transform: scaleX(0.5);
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    width: 60px;
-  }
-}
-
-@keyframes scale-right {
-  0% {
-    width: 0;
-    -webkit-transform: scaleX(0.5);
-            transform: scaleX(0.5);
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    width: 60px;
-  }
-}
-
 @-webkit-keyframes rotate {
-  50% {
-    -webkit-transform: rotate(0turn);
-            transform: rotate(0turn);
+  40% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   100% {
     -webkit-transform: rotate(-1turn);
@@ -565,9 +563,9 @@ footer ul .logo {
 }
 
 @keyframes rotate {
-  50% {
-    -webkit-transform: rotate(0turn);
-            transform: rotate(0turn);
+  40% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   100% {
     -webkit-transform: rotate(-1turn);
@@ -581,9 +579,13 @@ footer ul .logo {
 }
 
 .loader {
-  position: absolute;
-  top: 50%;
-  left: 48%;
+  position: fixed;
+  top: 25%;
+  left: 40%;
+  margin: auto;
+  right: 40%;
+  min-width: 90px;
+  max-width: 90px;
 }
 
 .lds-dual-ring {
@@ -688,6 +690,13 @@ footer ul .logo {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .loader {
+    position: fixed;
+    top: 45%;
   }
 }
 
