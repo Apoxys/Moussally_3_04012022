@@ -211,12 +211,15 @@ footer ul .logo {
   width: 40px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1400px) {
   .allcourses {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -261,7 +264,7 @@ footer ul .logo {
   padding: 5px;
 }
 
-.homecard-text {
+.homecard--text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,12 +278,12 @@ footer ul .logo {
   padding-right: 10px;
 }
 
-.homecard-text h2 {
+.homecard--text h2 {
   margin: 0px;
   margin-top: 10px;
 }
 
-.homecard-text p {
+.homecard--text p {
   margin: 0px;
   margin-bottom: 10px;
 }
@@ -294,7 +297,7 @@ footer ul .logo {
   transition: all 0.3s;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .restaurantlist {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -380,6 +383,8 @@ footer ul .logo {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   background-image: linear-gradient(175deg, #fface8 0%, #ae80e5 70%);
+  -webkit-box-shadow: 3px 3px 7px #9b9b9b;
+          box-shadow: 3px 3px 7px #9b9b9b;
 }
 
 .btn-order {
@@ -500,6 +505,10 @@ footer ul .logo {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(95%, #FF79DA));
   background-image: linear-gradient(180deg, #9356DC 0%, #FF79DA 95%);
   background-clip: text;
+<<<<<<< HEAD
+=======
+  -webkit-background-clip: text;
+>>>>>>> 44a02509e525bc695d5ec39fef609247e1216a16
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -693,7 +702,14 @@ footer ul .logo {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1000px) {
+  .loader {
+    position: fixed;
+    top: 30%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 999px) {
   .loader {
     position: fixed;
     top: 45%;
