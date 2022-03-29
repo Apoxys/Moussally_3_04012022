@@ -7,10 +7,17 @@
     & span{
         align-items: center;
         display: flex;
-    }
-    & p{
-        font-weight: 500;
+    } 
+    & input{
+        background-color: $mapbackground-color;
+        margin-top: 12px;
+        margin-bottom: 12px;
         font-size: large;
+        font-weight: 500;
+        border: solid 1px $primary-color;
+        border-radius: 20px;
+        padding: 5px;
+        text-align: center;
     }
 }
 

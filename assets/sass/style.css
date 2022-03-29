@@ -735,9 +735,16 @@ footer ul .logo {
   display: flex;
 }
 
-.location p {
-  font-weight: 500;
+.location input {
+  background-color: #eaeaea;
+  margin-top: 12px;
+  margin-bottom: 12px;
   font-size: large;
+  font-weight: 500;
+  border: solid 1px #9356DC;
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
 }
 
 .explore {
