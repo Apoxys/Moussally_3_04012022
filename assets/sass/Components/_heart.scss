@@ -17,19 +17,11 @@
     color: transparent;
     background-image: $heart-color;
     background-clip: text;
-<<<<<<< HEAD
-    transform: scale(1.1);
-=======
     -webkit-background-clip: text;
     transform: scale(1.1)
->>>>>>> 44a02509e525bc695d5ec39fef609247e1216a16
 }
 
 .fullheart:hover .emptyheart{
     opacity: 0;
-<<<<<<< HEAD
-    transform: scale(0.9);
-=======
     transform: scale(0.9)
->>>>>>> 44a02509e525bc695d5ec39fef609247e1216a16
 }

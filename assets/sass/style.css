@@ -505,10 +505,7 @@ footer ul .logo {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(95%, #FF79DA));
   background-image: linear-gradient(180deg, #9356DC 0%, #FF79DA 95%);
   background-clip: text;
-<<<<<<< HEAD
-=======
   -webkit-background-clip: text;
->>>>>>> 44a02509e525bc695d5ec39fef609247e1216a16
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
